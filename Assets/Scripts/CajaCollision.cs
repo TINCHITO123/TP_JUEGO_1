@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class CajaCollision : MonoBehaviour
 {
-   void OnCollisionEnter(Collision col)
-   {
-
-if(col.gameObject.CompareTag("Caja"))
-col.gameObject.GetComponent<CajaSpawn>().LocateBoxAtRandomPosition();
-
+  void OnCollisionEnter (Collision col)
+  {
+   if(col.gameObject.CompareTag("Caja")){
+      col.gameObject.GetComponent<CajaCollision>().LocateBoxAtRandomPosition();
    }
+
+  }
 }
