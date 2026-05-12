@@ -8,7 +8,8 @@ public class CajaMovement : MonoBehaviour
 
     void Update()
     {
-        transform.Translate(0, -speed * Time.deltaTime, 0);    
+       float move = Input.GetAxis("Horizontal");
+transform.Translate(move * speed * Time.deltaTime, 0, 0);
     }
 
     void OnCollisionEnter(Collision col)

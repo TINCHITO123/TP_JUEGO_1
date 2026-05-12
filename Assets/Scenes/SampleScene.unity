@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -125,6 +125,7 @@ GameObject:
   - component: {fileID: 55540615}
   - component: {fileID: 55540614}
   - component: {fileID: 55540613}
+  - component: {fileID: 55540618}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -141,9 +142,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 55540612}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd92fb695efa8eb439d82bfed3accfb9, type: 3}
+  m_Script: {fileID: 11500000, guid: c8bbc813b4c7e734c914855b67a62c5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 5
 --- !u!65 &55540614
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -216,6 +218,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &55540618
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 55540612}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &138339829
 GameObject:
   m_ObjectHideFlags: 0
@@ -228,12 +246,12 @@ GameObject:
   - component: {fileID: 138339832}
   - component: {fileID: 138339831}
   - component: {fileID: 138339830}
-  - component: {fileID: 138339834}
   - component: {fileID: 138339835}
+  - component: {fileID: 138339834}
   - component: {fileID: 138339836}
   m_Layer: 0
   m_Name: CajaMala
-  m_TagString: Untagged
+  m_TagString: Caja
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -319,10 +337,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 138339829}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c8bbc813b4c7e734c914855b67a62c5e, type: 3}
+  m_Script: {fileID: 11500000, guid: 27d882075314f674eb8b9449064745ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
+  StartValue: 0
 --- !u!54 &138339835
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -348,10 +366,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 138339829}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 27d882075314f674eb8b9449064745ac, type: 3}
+  m_Script: {fileID: 11500000, guid: 31df47ba3636a03458934e52829bca0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StartValue: 0
 --- !u!1 &170076733
 GameObject:
   m_ObjectHideFlags: 0

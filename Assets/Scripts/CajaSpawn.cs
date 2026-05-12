@@ -3,10 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 public class CajaSpawn : MonoBehaviour
 {
-  int randomNumber;
+int randomNumber;
 public float StartValue;
 
-  
     // Start is called before the first frame update
     void Start()
     {
@@ -15,15 +14,9 @@ public float StartValue;
 
     // Update is called once per frame
     void Update()
-    {
-        
-   
-   
-   
-   
- }
+    {}
 
-void LocateBoxAtRandomPosition()
+public void LocateBoxAtRandomPosition()
 {
     Vector3 currentPosition = transform.position;
     float newX = 0f;

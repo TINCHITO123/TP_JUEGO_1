@@ -8,12 +8,12 @@ public class PlayerController : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A))
         {
-            transform.Translate(-2, 0, 0);
+            transform.Translate(0, 0, -2);
         }
 
         if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D))
         {
-            transform.Translate(2, 0, 0);
+            transform.Translate(0, 0, 2);
         }
     }
 }
