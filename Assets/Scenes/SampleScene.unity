@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -124,11 +124,11 @@ GameObject:
   - component: {fileID: 55540616}
   - component: {fileID: 55540615}
   - component: {fileID: 55540614}
-  - component: {fileID: 55540613}
   - component: {fileID: 55540618}
+  - component: {fileID: 55540613}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Caja
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -142,10 +142,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 55540612}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c8bbc813b4c7e734c914855b67a62c5e, type: 3}
+  m_Script: {fileID: 11500000, guid: bd92fb695efa8eb439d82bfed3accfb9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
 --- !u!65 &55540614
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -340,7 +339,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27d882075314f674eb8b9449064745ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StartValue: 0
+  StartValue: 9.5
 --- !u!54 &138339835
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -366,9 +365,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 138339829}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 31df47ba3636a03458934e52829bca0a, type: 3}
+  m_Script: {fileID: 11500000, guid: c8bbc813b4c7e734c914855b67a62c5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 0.005
 --- !u!1 &170076733
 GameObject:
   m_ObjectHideFlags: 0
@@ -532,6 +532,7 @@ GameObject:
   - component: {fileID: 1839413138}
   - component: {fileID: 1839413137}
   - component: {fileID: 1839413136}
+  - component: {fileID: 1839413140}
   m_Layer: 0
   m_Name: Plane
   m_TagString: Untagged
@@ -612,3 +613,15 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1839413140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1839413135}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31df47ba3636a03458934e52829bca0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
